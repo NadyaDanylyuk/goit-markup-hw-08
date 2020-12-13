@@ -1,0 +1,42 @@
+.what-we-do {
+  display: none;
+  padding-bottom: 94px;
+
+  @media screen and(min-width: 1230px) {
+    display: block;
+  }
+}
+.what-we-do-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.what-we-do-list {
+  display: flex;
+
+  & .what-we-do-item + .what-we-do-item {
+    margin-left: 30px;
+  }
+}
+.what-we-do-item {
+  position: relative;
+}
+.what-we-do-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2em;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
